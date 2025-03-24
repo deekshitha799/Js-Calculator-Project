@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./calculator.css">
+    
+</head>
+<body>
+    <div class="maincont flex column">
+        <div class="screen">
+        <input type="text" id="res">
+        </div>
+        <div class="calBody flex">
+            <div class="btncont flex column">
+                <div class="btns1 flex">
+                    <button class="btn colorOrange" id="clear" onclick="Clear()">C</button>
+                    <button class="btn colorOrange" id="backspace" onclick="Back()">Back</button>
+                    <button class="btn colorOrange" id="mod" onclick="Solve('%')">%</button>
+                    <button class="btn backOrange" id="div" onclick="Solve('/')">/</button>
+                </div>
+                <div class="btns1 flex">
+                    <button class="btn" id="seven" onclick="Solve('7')">7</button>
+                    <button class="btn" id="eight"onclick="Solve('8')">8</button>
+                    <button class="btn" id="nine" onclick="Solve('9')">9</button>
+                    <button class="btn backOrange" id="multi" onclick="Solve('x')">x</button>
+                </div>
+                <div class="btns1 flex">
+                    <button class="btn" id="four" onclick="Solve('4')">4</button>
+                    <button class="btn" id="five" onclick="Solve('5')">5</button>
+                    <button class="btn" id="six" onclick="Solve('6')">6</button>
+                    <button class="btn backOrange" id="minus" onclick="Solve('-')">-</button>
+                </div>
+                <div class="btns1 flex">
+                    <button class="btn" id="one" onclick="Solve('1')">1</button>
+                    <button class="btn" id="two" onclick="Solve('2')">2</button>
+                    <button class="btn" id="three" onclick="Solve('3')">3</button>
+                    <button class="btn backOrange" id="plus" onclick="Solve('+')">+</button>
+                </div>
+                <div class="btns1 flex">
+                    <button class="btn" id="zero" onclick="Solve('0')">0</button>
+                    <button class="btn" id="point" onclick="Solve('.')">.</button>
+                    <button class="btn backOrange" id="equal" onclick="Result()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+</html>
+
+
